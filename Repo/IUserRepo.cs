@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Banken2023.Classes
+namespace Banken2023.Repo
 {
-    internal class Repository
+    internal interface IUserRepo
     {
     }
 }
