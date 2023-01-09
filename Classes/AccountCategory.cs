@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Banken2023.Classes;
 
-namespace Banken2023.Repo
+namespace Banken2023.Classes
 {
-    internal interface IUserRepo
+    public enum AccountCategory
     {
-        Customer[] GetUsers();
+        debit = 1,
+        save
     }
 }

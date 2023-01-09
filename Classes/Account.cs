@@ -10,7 +10,7 @@ namespace Banken2023.Classes
     {
         public int AccountNumber { get; set; }
         public int Balance { get; set; }
-        public string AccountType { get; set; }
+        public AccountCategory category { get; set; }
 
         public int GetBalance()
         {
@@ -26,11 +26,11 @@ namespace Banken2023.Classes
 
         }
 
-        public Account(int accountNumber, int balance, string accountType)
+        public Account(int accountNumber, int balance, AccountCategory category)
         {
             AccountNumber = accountNumber;
             Balance = balance;
-            AccountType = accountType;
+            this.category = category;
         }
     }
 }
